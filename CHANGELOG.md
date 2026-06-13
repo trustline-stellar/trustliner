@@ -27,3 +27,12 @@ once packages are published.
   schemas, on-chain settlement (claimable-balance claim predicates, reclaim window, fee
   responsibility, `funded` vs `sponsored` account-creation strategies), and error codes.
   Remaining: open the public RFC.
+- **M3 — handshake server + SEP-conformant SDK client.**
+  - `@trustliner/sdk` split into `builders` (+ reclaim claimants) and a `client`
+    (discovery via `stellar.toml`, `fetchInfo`, `requestOnboarding`, `getOnboarding`,
+    `submitClaim`, typed `OnboardingError`).
+  - New `@trustliner/server` (Hono): `GET /info`, `POST /transactions`,
+    `GET /transactions/:id`, `POST /transactions/:id/submit`; injectable onboarding
+    service; `funded` + `sponsored` strategies; claim-window reclaim; error mapping.
+  - Verified on testnet: full HTTP onboarding loop (request → claim → recipient signs →
+    submit → completed). SDK client + server HTTP layer unit-tested (19 tests total).

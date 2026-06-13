@@ -6,7 +6,7 @@ How an exchange adopts Trustline Onboarder to withdraw non-native assets to user
 have not set up a trustline.
 
 Outline:
-1. Install `@trustline-onboarder/sdk`.
+1. Install `@trustliner/sdk`.
 2. Advertise onboarding support (discovery).
 3. Authorize incoming onboarding requests.
 4. Build and sign the sponsored settlement (sponsor reserves + claimable balance).

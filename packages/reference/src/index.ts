@@ -1,5 +1,5 @@
 /**
- * @trustline-onboarder/reference
+ * @trustliner/reference
  *
  * Reference implementation of the trustline-free onboarding standard against the
  * Stellar testnet. Demonstrates that a recipient can end up holding a non-native asset
@@ -14,7 +14,7 @@ import {
   buildCreateClaimableBalanceTx,
   buildSponsoredClaimTx,
   type Asset,
-} from "@trustline-onboarder/sdk";
+} from "@trustliner/sdk";
 
 export interface NetworkConfig {
   horizonUrl: string;

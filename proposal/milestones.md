@@ -44,7 +44,7 @@ proposal; final tranche structure is agreed with SCF reviewers.
 **Acceptance criteria**
 - Typed API for both sender and recipient sides of the handshake.
 - Builds transactions; never custodies keys (caller signs).
-- Published to npm under `@trustline-onboarder/sdk` (alpha tag).
+- Published to npm under `@trustliner/sdk` (alpha tag).
 - Unit + integration tests; documented public API.
 
 **Deliverable:** SDK / libraries for wallet and exchange integration.

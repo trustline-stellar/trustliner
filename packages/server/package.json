@@ -1,0 +1,35 @@
+{
+  "name": "@trustliner/server",
+  "version": "0.0.0",
+  "private": true,
+  "description": "SEP-conformant Trustline Onboarder server (sender side): discovery, onboarding requests, claim, status.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "pnpm --filter @trustliner/sdk build && tsc -p tsconfig.json",
+    "start": "node dist/start.js",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "@stellar/stellar-sdk": "^13.0.0",
+    "@trustliner/sdk": "workspace:*",
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "@trustline-onboarder/reference",
+  "name": "@trustliner/reference",
   "version": "0.0.0",
   "private": true,
   "description": "Reference implementation of trustline-free onboarding — issuer/sender and recipient flows.",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@stellar/stellar-sdk": "^13.0.0",
-    "@trustline-onboarder/sdk": "workspace:*"
+    "@trustliner/sdk": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

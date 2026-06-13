@@ -262,8 +262,11 @@ sender reclaim; the SDK never custodies recipient keys.
 
 ## Implementation
 
+- Server: [`../packages/server`](../packages/server) — SEP-conformant sender server
+  (`/info`, `/transactions`, status, submit) on Hono.
+- SDK: [`../packages/sdk`](../packages/sdk) — transaction builders for both strategies
+  plus the SEP client (discovery, info, request, status, submit).
 - Reference implementation: [`../packages/reference`](../packages/reference) — proves both
   the `sponsored` (zero-balance) and `funded` (wallet) flows on testnet.
-- SDK: [`../packages/sdk`](../packages/sdk) — transaction builders for both strategies.
 - Live wallet demo: [`../apps/welcome`](../apps/welcome) — `funded` flow signed by
   Freighter on testnet.

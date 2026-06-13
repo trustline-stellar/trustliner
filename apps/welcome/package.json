@@ -1,5 +1,5 @@
 {
-  "name": "@trustline-onboarder/welcome",
+  "name": "@trustliner/welcome",
   "version": "0.0.0",
   "private": true,
   "description": "\"Welcome to Stellar\" onboarding page + Freighter testnet test harness.",
@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "pnpm --filter @trustline-onboarder/sdk build && vite build",
+    "build": "pnpm --filter @trustliner/sdk build && vite build",
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "clean": "rm -rf .next out dist"
@@ -15,7 +15,7 @@
   "dependencies": {
     "@stellar/freighter-api": "^4.0.0",
     "@stellar/stellar-sdk": "^13.0.0",
-    "@trustline-onboarder/sdk": "workspace:*"
+    "@trustliner/sdk": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.6.0",

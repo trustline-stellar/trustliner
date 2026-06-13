@@ -7,7 +7,7 @@ sign once on testnet.
 ## Run it
 
 ```bash
-pnpm --filter @trustline-onboarder/welcome dev
+pnpm --filter @trustliner/welcome dev
 # open the printed http://localhost:5173
 ```
 
@@ -43,7 +43,7 @@ A fresh Freighter testnet account is the ideal recipient.
 ## Deploy (Vercel preview)
 
 The SDK is a workspace package (not published to npm), so it must be built before the
-app. The app's `build` script does this (`pnpm --filter @trustline-onboarder/sdk build
+app. The app's `build` script does this (`pnpm --filter @trustliner/sdk build
 && vite build`), and the repo-root `vercel.json` configures a root-directory project.
 
 - **Root Directory = repo root** (recommended): `vercel.json` handles build + output

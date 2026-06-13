@@ -10,7 +10,7 @@ import {
   buildCreateAccountTx,
   buildCreateClaimableBalanceTx,
   type Asset,
-} from "@trustline-onboarder/sdk";
+} from "@trustliner/sdk";
 
 // XLM the sponsor seeds the new recipient account with. Covers the 1 XLM base reserve,
 // the 0.5 XLM trustline reserve, and transaction fees. The recipient pays nothing.

@@ -10,7 +10,7 @@ Post-launch sustainability strategy for Trustline Onboarder.
 
 ## Code (SDK + reference)
 
-- SDK published to **npm** under `@trustline-onboarder/*` with **semantic versioning**.
+- SDK published to **npm** under `@trustliner/*` with **semantic versioning**.
 - **CI** (GitHub Actions): lint, typecheck, unit + integration tests on every PR.
 - Public issue tracker with triage labels and response targets.
 - Changelog maintained per release.

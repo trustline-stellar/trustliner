@@ -1,6 +1,6 @@
 /**
  * Runnable testnet demo. Build the package, then:
- *   pnpm --filter @trustline-onboarder/reference demo
+ *   pnpm --filter @trustliner/reference demo
  */
 import { runDemo } from "./index.js";
 

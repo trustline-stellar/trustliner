@@ -6,7 +6,7 @@ How a wallet adopts Trustline Onboarder to let users receive non-native assets w
 holding XLM or pre-configuring a trustline.
 
 Outline:
-1. Install `@trustline-onboarder/sdk`.
+1. Install `@trustliner/sdk`.
 2. Discover senders that advertise onboarding support.
 3. Initiate the handshake on the recipient's behalf.
 4. Claim the escrowed asset on first interaction (recipient signs).

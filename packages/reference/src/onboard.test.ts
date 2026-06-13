@@ -3,7 +3,7 @@ import { runDemo } from "./index.js";
 
 /**
  * Live testnet integration test. Hits friendbot + Horizon, so it is OFF by default.
- * Run with:  RUN_TESTNET=1 pnpm --filter @trustline-onboarder/reference test
+ * Run with:  RUN_TESTNET=1 pnpm --filter @trustliner/reference test
  */
 const RUN = process.env.RUN_TESTNET === "1";
 

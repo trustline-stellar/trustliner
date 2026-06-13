@@ -26,7 +26,7 @@ artifacts; the onboarding flow executes against public Stellar infrastructure.
 
 ```mermaid
 flowchart TB
-    Dev[Wallet / Exchange integrator] -->|imports| SDK[(npm: @trustline-onboarder/sdk)]
+    Dev[Wallet / Exchange integrator] -->|imports| SDK[(npm: @trustliner/sdk)]
     SDK -->|submits txns| Horizon[Stellar Horizon / RPC]
     Horizon --> Net[(Stellar network)]
     User[New user] -->|optional| Page[Welcome to Stellar page<br/>static / edge, no keys]

@@ -17,7 +17,7 @@ function freshAccount(pubkey: string): Account {
   return new Account(pubkey, "0");
 }
 
-describe("@trustline-onboarder/sdk", () => {
+describe("@trustliner/sdk", () => {
   it("exposes a version", () => {
     expect(VERSION).toBe("0.0.0");
   });

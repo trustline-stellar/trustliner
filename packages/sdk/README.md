@@ -1,4 +1,4 @@
-# @trustline-onboarder/sdk
+# @trustliner/sdk
 
 TypeScript SDK for trustline-free Stellar asset onboarding. Lets wallets and exchanges
 deliver a non-native asset to a recipient with no XLM and no trustline.
@@ -8,13 +8,13 @@ deliver a non-native asset to a recipient with no XLM and no trustline.
 ## Install
 
 ```bash
-pnpm add @trustline-onboarder/sdk @stellar/stellar-sdk
+pnpm add @trustliner/sdk @stellar/stellar-sdk
 ```
 
 ## Usage (planned API)
 
 ```ts
-import { OnboarderSender, OnboarderRecipient } from "@trustline-onboarder/sdk";
+import { OnboarderSender, OnboarderRecipient } from "@trustliner/sdk";
 
 const sender = new OnboarderSender({ horizonUrl, networkPassphrase });
 const auth = await sender.authorize({ recipient, asset, amount });

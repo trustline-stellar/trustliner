@@ -1,5 +1,5 @@
 {
-  "name": "@trustline-onboarder/sdk",
+  "name": "@trustliner/sdk",
   "version": "0.0.0",
   "description": "TypeScript SDK for trustline-free Stellar asset onboarding (wallet & exchange integration).",
   "license": "Apache-2.0",

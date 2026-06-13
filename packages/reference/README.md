@@ -1,4 +1,4 @@
-# @trustline-onboarder/reference
+# @trustliner/reference
 
 Reference implementation of the trustline-free onboarding standard, demonstrating both
 the **sender** and **recipient (sponsored claim)** flows end-to-end on Stellar testnet.
@@ -31,8 +31,8 @@ See [the standard](../../standard/sep-draft.md) and
 ## Run the demo (testnet)
 
 ```bash
-pnpm --filter @trustline-onboarder/reference demo        # amount defaults to 10
-pnpm --filter @trustline-onboarder/reference demo 25     # custom amount
+pnpm --filter @trustliner/reference demo        # amount defaults to 10
+pnpm --filter @trustliner/reference demo 25     # custom amount
 ```
 
 Generates a fresh sender (funded via friendbot) and an unfunded recipient, runs both
@@ -43,14 +43,14 @@ flows, and asserts the recipient holds the asset with zero XLM.
 Off by default (hits the network). Enable with an env var:
 
 ```bash
-RUN_TESTNET=1 pnpm --filter @trustline-onboarder/reference test
+RUN_TESTNET=1 pnpm --filter @trustliner/reference test
 ```
 
 ## Programmatic API
 
 ```ts
 import { Horizon } from "@stellar/stellar-sdk";
-import { TESTNET, runSenderFlow, runRecipientFlow } from "@trustline-onboarder/reference";
+import { TESTNET, runSenderFlow, runRecipientFlow } from "@trustliner/reference";
 
 const server = new Horizon.Server(TESTNET.horizonUrl);
 const balanceId = await runSenderFlow({ server, cfg: TESTNET, sender, recipient: recipient.publicKey(), asset, amount: "10" });
